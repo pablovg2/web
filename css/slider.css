@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+.slider-content{
+	position:relative;
+	overflow:hidden;
+}
+.slider-content .preload{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	text-align:center;
+	background:#000
+}
+.slider-content .preload div{
+	height:100%;
+	width:100%;
+	background:transparent url(../images/ajax-loader.gif) no-repeat scroll 50% 50%;
+}
+.slider-main-outer{
+	position:relative;
+	height:100%;
+	width:500px;
+	z-index:3px;
+	overflow:hidden;
+}
+
+
+/*******************************************************/
+.slider-main-item-desc{
+	z-index:100px;
+	position:absolute;
+	bottom:50px;
+	left:0px;
+	width:250px;
+	background:url(../js/lofslidernews/images/bg_trans.png);
+	/* filter:0.7(opacity:60) */
+	padding:10px;
+}
+.slider-main-item-desc a { color: #fff; text-decoration: none; font-weight: lighter;}
+.slider-main-item-desc h3 { font-size: 16px; }
+.slider-main-item-desc p { font-size: 11px; }
+.slider-main-item-desc .meta { color: #fcc10b; }
+.slider-main-item-desc .meta a { none; color: #fcc10b; }
+.slider-main-item-desc .meta a:hover {color: #fff; }
+
+/* main flash */
+ul.slider-main-wapper{
+	/* margin-right:auto; */
+	overflow:hidden;
+	background:transparent url(../js/lofslidernews/images/load-indicator.gif) no-repeat scroll 50% 50%;
+	padding:0px;
+	margin:0;
+	position:absolute;
+	overflow:hidden;
+}
+
+ul.slider-main-wapper li{
+	overflow:hidden;
+	padding:0px;
+	margin:0px;
+	float:left;
+	position:relative;
+}
+.lof-opacity  li{
+	position:absolute;
+	top:0;
+	left:0;
+	float:inherit;
+}
+ul.slider-main-wapper li img{
+	padding:0px;	
+}
+
+/* item navigator */
+.slider-main-outer .slider-next,  .slider-main-outer .slider-previous{
+	display:block;
+	width:40px;
+	color:#FFF;
+	cursor:pointer;
+	position:absolute;
+	height:100%;
+	z-index:3;
+	top:0;
+	text-indent:-999px;
+
+}
+.slider-main-outer .slider-next {
+	right:05px;
+}
+.slider-main-outer .slider-previous {
+	left:05px;
+}
+
+.slider-main-outer .slider-next.icon {
+	right:05px;
+	background:url(../js/lofslidernews/images/b_next.png) no-repeat right center;
+}
+.slider-main-outer .slider-previous.icon {
+	left:05px;
+	background:url(../js/lofslidernews/images/b_prev.png) no-repeat left center;
+}

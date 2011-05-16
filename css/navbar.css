@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+#navbar { height: 23px; width: 1005px; margin: 0; padding: 0; clear: both; background-color: #000; }
+#navbar.bar { padding-top: 0px; padding-bottom: 0px; }
+	
+#navbar li {	float: left; list-style: none;
+	font-weight: bold;
+	font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif;
+	font-size: 11px;
+}
+
+	#navbar li a
+	{	display: block;
+		padding: 5px 12px;
+		text-decoration: none;
+		border-right: 1px solid #fcc10b;
+		/*width: 70px;*/
+		color: #fcc10b;;
+		white-space: nowrap}
+
+	#navbar li a:hover
+	{	background: #fcc10b;
+		color: #000; }
+		
+		#navbar li ul
+		{	margin: 0;
+			padding: 0;
+			position: absolute;
+			visibility: hidden;
+			border-top: 1px solid #000;}
+		
+		#navbar li ul li
+		{	float: none;
+			display: inline}
+		
+		#navbar li ul li a
+		{	width: auto;
+			background: #fcc10b;
+			color: #000; }
+		
+		#navbar li ul li a:hover
+		{	background: #fed148;}

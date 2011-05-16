@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+/* layout */
+#wrapper { width: 100%; margin: 0px; padding: 0px; }
+#container, #subWrapper{ width: 1005px; margin: 0 auto 0 auto; }
+#header, #footer { clear: both; }
+#content { padding: 10px 5px 20px 5px; }
+
+#main { padding-right: 5px; float: left; width: 690px;}
+#sidebar { width: 295px; margin-left: 700px; }
+
+/* portada */
+.home #main, .archive #main { width: 500px; }
+.home #sidebar, .archive #sidebar { padding-right: 5px; margin-left: 510px; }
+.home #right, .archive #right { float: right; width: 180px; }
+
+.zone1, .zone2 { clear: both; }
+.zone2-left, .zone2-right {width: 245px; }
+.zone2-left { float: left; }
+.zone2-right { margin-left: 255px; }
+
+/* orejas */
+#subWrapper.with-publi { width: 1287px; }
+#subWrapper.with-publi #container { float: left; margin-left: 1px; }
+#earright { float: right; }
+#earleft { float: left; }
