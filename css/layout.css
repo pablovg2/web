@@ -22,5 +22,21 @@
 /* orejas */
 #subWrapper.with-publi { width: 1287px; }
 #subWrapper.with-publi #container { float: left; margin-left: 1px; }
-#earright { float: right; }
-#earleft { float: left; }
+#earright {
+	margin: 0 50%;
+   padding-left: 503px;
+   position: fixed;
+   width: 545px;
+   z-index: -1000;}
+#earleft {
+    margin-left: -643px;
+    padding-left: 50%;
+    position: fixed;
+    width: 100%;
+z-index: -1005;
+	}
+#earleft link, #earright link {
+	border:  1px;
+	display: block;
+	z-index: 200;
+}
