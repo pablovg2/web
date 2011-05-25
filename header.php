@@ -58,8 +58,8 @@
 				<!-- logo -->
 				<div class="logo"><h1><a href="<?php bloginfo('url'); ?>/"><span><?php bloginfo('name'); ?></span></a></h1></div>
 				<div class="bar">
-					<div class="publi">
-						<a href="http://www.fiberfib.com"><img src="http://localhost/~rafa/wp-wego/wp-content/themes/wego/images/banner-prueba.gif" /></a>
+					<div class="publizone">
+						<!-- <a href="http://www.fiberfib.com"><img src="http://localhost/~rafa/wp-wego/wp-content/themes/wego/images/banner-prueba.gif" /></a>-->
 					</div>
 					<!-- social icons -->
 					<div id="searchbar" class="bar">

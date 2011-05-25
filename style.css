@@ -40,7 +40,7 @@ h2 { font-size: 28px; }
 }
 #header h1 a span { visibility: hidden;}
 #header .logo { width: 170px; float: left; padding: 18px 0px 0px 10px; }
-#header .publi { width: 700px; text-align: left; margin-top: -5px; }
+#header .publizone { width: 700px; min-height: 103px; text-align: left; margin-top: -5px; }
 #header .bar {margin-left: 290px; padding: 5px; }
 
 #header  #searchbar form#searchform { float: right; margin-left: 10px; margin-bottom: 10px; } 
@@ -186,6 +186,13 @@ img.alignleft {
 	margin-right: auto;
 }
 
+/* comments */
+h2#comments { margin: 20px 0px 20px 0px; clear: both; }
+#commentlist li { font-size: 12px;  list-style: none; margin-bottom: 15px; }
+#commentlist li cite { font-size: 12px; }
+#commentlist .comment-content {padding: 5px 5px 25px 5px; background: #fedd78 url('images/comment-back') no-repeat bottom left; }
+	
+}
 /*search */
 
 #searchResult { margin-top: 30px; }

@@ -13,10 +13,9 @@
 	</div>
 
 	<div class="feedback">
-		<?php wp_link_pages(); ?>
-		<?php comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')); ?>
+		<?php //wp_link_pages(); ?>
+		<?php //comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')); ?>
 	</div>
-	<?php if(eme_is_single_event_page()) echo "hola"; ?>
 </div>
 
 <?php comments_template(); // Get wp-comments.php template ?>
