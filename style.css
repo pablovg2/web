@@ -68,11 +68,11 @@ h2 { font-size: 28px; }
 .flickr {	background-image: url("images/icons/flickr_16.png"); }
 .facebook {	background-image: url("images/icons/facebook_16.png"); }
 .twitter {	background-image: url("images/icons/twitter_16.png"); }
+.tuenti {	background-image: url("images/icons/tuenti_16.png"); }
 
 /* search bar */
 #searchbar #searchsubmit { display: none; }
-#searchbar #s { border-width: 1px; border-style: solid; border-color: #666;
-	height: 20px; padding-right: 18px; padding-left: 3px; border-radius: 3px; 
+#searchbar #s { height: 20px; padding-right: 18px; padding-left: 3px;
 	background: #fff url('images/magnifier-medium-left.png') no-repeat right center;
 }
 
@@ -187,10 +187,15 @@ img.alignleft {
 }
 
 /* comments */
-h2#comments { margin: 20px 0px 20px 0px; clear: both; }
+h3#comments { margin: 20px 0px 20px 0px; clear: both; }
 #commentlist li { font-size: 12px;  list-style: none; margin-bottom: 15px; }
 #commentlist li cite { font-size: 12px; }
 #commentlist .comment-content {padding: 5px 5px 25px 5px; background: #fedd78 url('images/comment-back') no-repeat bottom left; }
+h3#postcomment { margin: 40px 0px 20px 0px; }
+#commentform input,
+#commentform textarea { margin-bottom: 10px; }
+/* forms */
+input, textarea { border-width: 1px; border-style: solid; border-color: #666; border-radius: 3px; }  
 	
 }
 /*search */
@@ -205,6 +210,9 @@ li.widget { list-style: none; }
 .widget ul { margin-bottom: 10px; }
 .widget li { list-style: none; ont-size: 13px; border-bottom: 1px dotted #ccc; padding: 3px 0px 3px 0px; }
 .widget li a { font-weight: bold; }
+
+/* discos y libros */
+.widget .discos { text-align: center; }
 
 /* Agenda eme */
 .widget_eme_list ul { list-style: none;}

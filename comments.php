@@ -8,11 +8,11 @@ if ( post_password_required() ) : ?>
 <p><?php _e('Enter your password to view comments.'); ?></p>
 <?php return; endif; ?>
 
-<h2 id="comments"><?php comments_number(__('No Comments'), __('1 Comment'), __('% Comments')); ?>
+<h3 id="comments"><?php comments_number(__('No Comments'), __('1 Comment'), __('% Comments')); ?>
 <?php if ( comments_open() ) : ?>
 	<a href="#postcomment" title="<?php _e("Leave a comment"); ?>">&raquo;</a>
 <?php endif; ?>
-</h2>
+</h3>
 
 <?php if ( have_comments() ) : ?>
 <ol id="commentlist">
@@ -32,14 +32,8 @@ if ( post_password_required() ) : ?>
 	<p><?php _e('No comments yet.'); ?></p>
 <?php endif; ?>
 
-<p><?php post_comments_feed_link(__('<abbr title="Really Simple Syndication">RSS</abbr> feed for comments on this post.')); ?>
-<?php if ( pings_open() ) : ?>
-	<a href="<?php trackback_url() ?>" rel="trackback"><?php _e('TrackBack <abbr title="Universal Resource Locator">URL</abbr>'); ?></a>
-<?php endif; ?>
-</p>
-
 <?php if ( comments_open() ) : ?>
-<h2 id="postcomment"><?php _e('Leave a comment'); ?></h2>
+<h3 id="postcomment"><?php _e('Leave a comment'); ?></h3>
 
 <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.'), wp_login_url( get_permalink() ) );?></p>

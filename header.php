@@ -75,10 +75,11 @@
 					<div id="searchbar" class="bar">
             			<?php get_search_form(); ?>
 						<ul class="socialicons">
-            				<li><a class="icon facebook" href="http://www.facebook.com/revistaweg" title="Facebook"><span>Facebook</span></a></li>
-            				<li><a class="icon twitter" href="http://www.twitter.com/elenanorabioso" title="Twitter"><span>Twitter</span></a></li>
-            				<li><a class="icon flickr" href="http://www.flickr.com/groups/elenanorabioso/" title="Flickr"><span>Flickr</span></a></li>
-            				<li><a class="icon rss" href="http://www.flickr.com/groups/elenanorabioso/" title="RSS"><span>RSS</span></a></li>
+							<li><a class="icon rss" href="<?php bloginfo('rss2_url'); ?>" title="RSS"><span>RSS</span></a></li>
+            				<li><a class="icon flickr" href="http://www.flickr.com/photos/revistawego/" title="Flickr"><span>Flickr</span></a></li>
+            				<li><a class="icon twitter" href="http://twitter.com/revistawego" title="Twitter"><span>Twitter</span></a></li>
+            				<li><a class="icon tuenti" href="http://www.tuenti.com/#m=Page&func=index&page_key=1_1678_60565376" title="Tuenti"><span>Tuenti</span></a></li>
+            				<li><a class="icon facebook" href="http://www.facebook.com/pages/Revista-WEGO/175276217486" title="Facebook"><span>Facebook</span></a></li>
             			</ul>
 					</div>
 				</div>
