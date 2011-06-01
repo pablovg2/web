@@ -4,7 +4,7 @@
 
 	<?php if (have_posts()) : ?>
 
-		<h2><span class="seccion">Resultados de la búsqueda</span></h2>
+		<h2 class="seccion">Resultados de la búsqueda</h2>
 
 		<ul id="searchResult">
 		<?php while (have_posts()) : the_post(); ?>

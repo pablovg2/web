@@ -1,7 +1,7 @@
 			</div> <!-- end content -->
 			<!-- footer -->
 			<div id="footer">
-				El pié de página.
+				<?php wp_nav_menu( array( 'theme_location' => 'footer' ) ); ?> 
 			</div><!-- end footer -->
 		</div> <!-- end container -->
 	</div> <!-- end subwrapper -->
