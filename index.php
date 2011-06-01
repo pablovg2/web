@@ -39,7 +39,11 @@
 					
 					<?php $args = array('title'=> get_the_title(), 'class'=>'content-img'); ?>
 					<div class="storycontent">
-						<?php the_post_thumbnail('thumbnail', $args); ?>
+						<?php if ( has_post_thumbnail()) : ?>
+   							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+   							<?php the_post_thumbnail('thumbnail', $args); ?>
+   							</a>
+ 						<?php endif; ?>
 						<?php echo (get_post_meta(get_the_ID(), "portada-texto-corto", true)!=''? get_post_meta(get_the_ID(), "portada-texto-corto", true) : get_the_excerpt()); ?>
 					</div>
 				</div><!-- end zone2-<?php echo ($c%2==0? 'left': 'right')?> -->

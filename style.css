@@ -198,7 +198,8 @@ img.alignleft {
 h3#comments { margin: 20px 0px 20px 0px; clear: both; }
 #commentlist li { font-size: 12px;  list-style: none; margin-bottom: 15px; }
 #commentlist li cite { font-size: 12px; }
-#commentlist .comment-content {padding: 5px 5px 25px 5px; background-image: url('images/comment-back'); background-repeat: no-repeat; background-position: bottom left; }
+#commentlist .comment-content {min-height: 32px; padding: 5px 5px 25px 5px; background-image: url('images/comment-back'); background-repeat: no-repeat; background-position: bottom left; }
+#commentlist .comment-content .avatar {float: left; margin: 0px 3px 0px 0px; }
 #commentlist .pingback .comment-content { color: #999; background-color: #eee; }
 #commentlist .comment .comment-content {background-color: #fedd78; }
 h3#postcomment { margin: 40px 0px 20px 0px; }

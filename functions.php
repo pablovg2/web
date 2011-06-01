@@ -38,6 +38,15 @@ function wego_libros_widget ($a) {
 	include('include-discos-libros.php');
 }
 
+/* new default avatar */
+add_filter( 'avatar_defaults', 'wegoavatar' );
+
+function wegoavatar ($avatar_defaults) {
+	$myavatar = get_bloginfo('template_directory') . '/images/avatar.gif';
+	$avatar_defaults[$myavatar] = "Wego";
+    return $avatar_defaults;
+}
+
 /*function wego_scripts() {
 	if(!is_admin()) {
 		if(is_front_page()) {

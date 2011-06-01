@@ -11,6 +11,7 @@
 	</style>
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
 	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php //comments_popup_script(); // off by default ?>
 	<!-- more conditional script -->
@@ -31,6 +32,12 @@
 		wp_enqueue_style('slider', get_bloginfo('template_directory').'/css/slider.css');
 	}
 	?>
+	<!--[if IE]> 
+	<style type="text/css" media="screen">
+		input, textarea, .eme-event-item, 
+		#footer, #header, #navbar { behavior: url(<?php bloginfo('template_directory');?>/css/ie-css3.htc);}
+	</style>
+	<![endif]-->
 	<?php wp_head(); ?>
 </head>
 

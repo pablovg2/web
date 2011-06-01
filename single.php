@@ -6,12 +6,13 @@
 
 <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 	 <h2 class="storytitle"><?php the_title(); ?></h2>
-	  <div class="meta"><div class="meta"><span class="date"><?php the_date('d.m.Y');?></span> | <?php the_category(', ') ?> | <?php the_author() ?> </div></div>
+	  <div class="meta"><span class="date"><?php the_date('d.m.Y');?></span> | <?php the_category(', ') ?> | <?php the_author() ?> </div>
 
 	<div class="storycontent">
 		<?php the_content(__('(more...)')); ?>
 	</div>
-
+	
+	<div class="meta"><strong>Temas: </strong><?php the_tags('', ', ', ''); ?></div>
 	<div class="feedback">
 		<?php //wp_link_pages(); ?>
 		<?php //comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')); ?>
