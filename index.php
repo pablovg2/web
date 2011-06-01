@@ -10,8 +10,8 @@
 	<?php $args = array(
 			"post__not_in" =>get_option("sticky_posts"), 
 			'caller_get_posts' => 1, 
-			'paged' => $pagi
-			//'category__not_in' => array(get_cat_ID('Breve'), get_cat_ID('New Strip on the Blog'), get_cat_ID('Discos'), get_cat_ID('El rincón'))
+			'paged' => $pagi,
+			'category__not_in' => array(get_cat_ID('Discos'), get_cat_ID('Libros'))
 		);
 		query_posts($args); 
 	?>
