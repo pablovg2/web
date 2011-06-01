@@ -11,10 +11,10 @@ Tags: Magazine, three-column, slideshow, ads
 
 /* Basic (tags html) */
 * { margin: 0; padding: 0; }
-body {	margin: 0; padding: 0; background: #F1F1F1; /*background: #F1F1F1 url('images/back1.jpg') repeat top;*/ 
+body {	margin: 0; padding: 0; background: #fff; /*background: #F1F1F1 url('images/back1.jpg') repeat top;*/ 
 	font-family: Arial,Helvetica,sans-serif;
 }
-a { text-decoration: none; color: #353384; /* color: #2320B0; color: #BE9B0D;*/ }
+a { text-decoration: none; color: #23459A; /* color: #2320B0; color: #BE9B0D;*/ }
 a:hover { color: #FCC10B; }
 
 h3, h2 { font-weight: lighter; }
@@ -23,15 +23,18 @@ h2 { font-size: 28px; }
 
 /* layout style */
 #wrapper { }
-#container { background-color: #fff;}
+#container { margin-top: 10px; background-color: #fff;}
 #main { border-right: 1px solid #F1F1F1; }
 .home #sidebar, .archive #sidebar {border-right: 1px solid #F1F1F1; }
 
 
 /* header style */
-#header { 
+#header {
 	background: #fcc10b	url('images/background3-header.png') repeat-x bottom;
 	padding-top: 3px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 }
 #header a { text-decoration: none; }
 #header h1 a {
@@ -77,7 +80,11 @@ h2 { font-size: 28px; }
 }
 
 /* footer style */
-#footer { background-color: #000; color: #fff; }
+#footer { background-color: #000; color: #fff; padding: 10px; font-size: 11px; text-align: right;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom: 10px; }
 
 /* menu */
 
@@ -105,13 +112,14 @@ h2 { font-size: 28px; }
 #navbar>ul>li.current-cat-parent>a { background-color: #fcc10b; color: #000; }
 */
 /* content */
-#content { background: url('images/background-contente.png') repeat-x top; }
+#content { background: url('images/background-contente2.png') no-repeat top center; }
 
 /* navigation bar */
-#navigation { clear: both; margin: 40px 0px 20px 0px; padding: 20px;
-	font-family: Georgia,"Times New Roman",Times,serif; font-size: 24px; font-style: italic;}
+#navigation { clear: both; margin: 40px 0px 20px 0px; padding: 20px 20px 20px 20px;
+	font-size: 18px; font-style: italic;}
 /* some clases*/
 .publi {background: url('images/publicidad.gif') no-repeat center top;	padding-top: 13px; }
+h2.seccion { text-align: right; border-bottom: 3px solid #FCC10B; font-size: 20px; margin-top: 10px;}
 
 /* slider */
 /*#slider { visibility: hidden; background-color: #000;}
@@ -190,7 +198,9 @@ img.alignleft {
 h3#comments { margin: 20px 0px 20px 0px; clear: both; }
 #commentlist li { font-size: 12px;  list-style: none; margin-bottom: 15px; }
 #commentlist li cite { font-size: 12px; }
-#commentlist .comment-content {padding: 5px 5px 25px 5px; background: #fedd78 url('images/comment-back') no-repeat bottom left; }
+#commentlist .comment-content {padding: 5px 5px 25px 5px; background-image: url('images/comment-back'); background-repeat: no-repeat; background-position: bottom left; }
+#commentlist .pingback .comment-content { color: #999; background-color: #eee; }
+#commentlist .comment .comment-content {background-color: #fedd78; }
 h3#postcomment { margin: 40px 0px 20px 0px; }
 #commentform input,
 #commentform textarea { margin-bottom: 10px; }
@@ -206,7 +216,8 @@ input, textarea { border-width: 1px; border-style: solid; border-color: #666; bo
 
 /* widgets*/
 li.widget { list-style: none; }
-.widget-title { font-size: 12px; font-weight: bold; text-align: right; padding: 3px; background-color: #fcc10b; border: 1px solid #000; }
+/*.widget-title { font-size: 12px; font-weight: bold; text-align: right; padding: 3px; background-color: #fcc10b; border: 1px solid #000; }*/
+.widget-title { font-size: 12px; font-weight: bold; text-align: right; padding: 3px 0px 3px 0px; border-bottom: 3px solid #fcc10b; margin-bottom: 3px; }
 .widget ul { margin-bottom: 10px; }
 .widget li { list-style: none; ont-size: 13px; border-bottom: 1px dotted #ccc; padding: 3px 0px 3px 0px; }
 .widget li a { font-weight: bold; }

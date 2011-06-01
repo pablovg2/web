@@ -39,7 +39,7 @@ jQuery(document).ready(function(){
 	if(jQuery('.slider-content').length>0) {
 		var buttons = { previous:jQuery('.slider-content .slider-previous') , next:jQuery('.slider-content .slider-next') };
 				
-		$obj = jQuery('.slider-content').lofJSidernews( { interval : 4000,
+		$obj = jQuery('.slider-content').lofJSidernews( { interval : 6000,
 										wapperSelector	: '.slider-main-wapper',
 										direction		: 'right',	
 									 	//easing			: 'easeOutBounce',

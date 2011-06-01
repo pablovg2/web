@@ -38,14 +38,7 @@
 
 <div id="wrapper">	
 
-<!-- zona publicidad externa izq -->
-<div id="earleft" style="cursor:pointer;"> 
-		<a target="_blank" href="http://www.fiberfib.com"><img width="100" height="500" alt="FIB 2011" src="http://www.elenanorabioso.com/wp-content/uploads/2011/03/fib11_banner_enanorabioso_100x500.gif"></a>
-</div>  <!-- end zona publicidad externa izq -->
-<!-- zona publicidad externa der -->
- <div id="earright"  style="cursor:pointer;" >
-	<div class="link" OnClick="javascript: window.open('http://www.xxxxx')"><a target="_blank" href="http://www.fiberfib.com"><img width="100" height="500" alt="FIB 2011" src="http://www.elenanorabioso.com/wp-content/uploads/2011/03/fib11_banner_enanorabioso_100x500.gif"></a></div>
-</div>
+
 <!-- zona publicidad externa der -->
 	<div id="subWrapper">
 		<!-- zona publicidad externa izq -->

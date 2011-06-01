@@ -16,7 +16,22 @@
 		//query_posts($args); 
 	?>
 <?php $c = 0; 
-	if (have_posts()) : while (have_posts()) : the_post(); ?>
+	if (have_posts()) : ?>
+	 <?php /* If this is a category archive */ if (is_category()) { ?>
+		<h2 class="seccion"><?php single_cat_title(); ?></span></h2>
+ 	  <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
+		<h2 class="seccion">Artículos etiquetados con <em><?php single_tag_title(); ?></em></span></h2>
+ 	  <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
+		<h2 class="seccion">Artículos del <?php the_time('F jS, Y'); ?></span></h2>
+ 	  <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+		<h2 class="seccion">Artículos de <?php the_time('F, Y'); ?></span></h2>
+ 	  <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+		<h2 class="seccion">Artículos del <?php the_time('Y'); ?></span></h2>
+	  <?php /* If this is an author archive */ } elseif (is_author()) { ?>
+		<h2 class="seccion">Artículos del autor</span></h2>
+	  <?php }?>
+	
+<?php		while (have_posts()) : the_post(); ?>
 		<?php if($c<2 && $pagi==1): ?><!-- primera zona -->
 		<div class="zone1">
 	 		<h3 class="storytitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>

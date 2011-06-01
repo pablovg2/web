@@ -1,6 +1,9 @@
 @CHARSET "UTF-8";
-#navbar { height: 23px; width: 1005px; margin: 0; padding: 0; clear: both; background-color: #000; }
-#navbar.bar { padding-top: 0px; padding-bottom: 0px; }
+#navbar { height: 23px; width: 985px; margin: 0; padding: 0; clear: both; background-color: #000;
+-webkit-border-radius: 0px 0px 20px 20px ;
+	-moz-border-radius: 0px 0px 20px 20px;
+	border-radius: 0px 0px 20px 20px; padding-left: 20px;}
+#navbar.bar {  padding-top: 0px; padding-bottom: 0px; }
 	
 #navbar li {	float: left; list-style: none;
 	font-weight: bold;
