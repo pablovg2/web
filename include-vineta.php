@@ -7,9 +7,7 @@
 		  while ($que->have_posts()): $que->the_post();
 		  	$d++; 
 		?>
-		<li <?php echo ($d==1? "class=\"first\"": '');?>><a href="<?= get_permalink($post->ID); ?>"><p><?= get_the_post_thumbnail($post->ID, 'vineta'); ?></a>
-			<!-- <strong><a href="<?= get_permalink($post->ID); ?>"><?php echo get_post_meta(get_the_ID(), "disco-libro-titulo", true); ?></a></strong><br/>
-			<small><?php echo get_post_meta(get_the_ID(), "disco-libro-autor", true);?></small></p> -->		
+		<li <?php echo ($d==1? "class=\"first\"": '');?>><a href="<?= get_permalink($post->ID); ?>"><?= get_the_post_thumbnail($post->ID, 'vineta'); ?></a>		
 		</li>
 		<?php endwhile;?>
 		</ul>

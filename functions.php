@@ -9,7 +9,8 @@ automatic_feed_links();
 
 function wego_menus() {
   register_nav_menus(
-    array( 'footer' => __( 'Enlaces del pié de página' ))
+    array( 'primary' => __( 'Menú principal' ), 
+    	'footer' => __( 'Enlaces del pié de página' ))
   );
 }
 

@@ -19,6 +19,9 @@
 .zone2-left { float: left; }
 .zone2-right { margin-left: 255px; }
 
+/* full width */
+#main.full-width { width: 995px }
+
 /* orejas */
 #subWrapper.with-publi { width: 1287px; }
 #subWrapper.with-publi #container { float: left; margin-left: 1px; }

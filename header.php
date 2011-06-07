@@ -20,21 +20,16 @@
     wp_enqueue_script('jquery', get_bloginfo('template_directory').'/js/jquery-1.5.2.min.js', false, '1.5.2');
     wp_enqueue_script('wego', get_bloginfo('template_directory').'/js/scripts.js', array('jquery'), '1.0');
 	if(is_front_page() || is_archive()) {
-		//wp_register_script('easing', get_bloginfo('template_directory').'/js/galleryview/js/jquery.easing.1.3.js', array('jquery'),'1.3' );
-		//wp_register_script('timers', get_bloginfo('template_directory').'/js/galleryview/js/jquery.timers-1.2.js', array('jquery'),'1.2' );
-		//wp_register_script('galleryview', get_bloginfo('template_directory').'/js/galleryview/js/jquery.galleryview-3.0.min.js', array('jquery', 'easing', 'timers'),'3.0' );
-		//wp_enqueue_script('galleryview');
-		//wp_enqueue_style('galleryview', get_bloginfo('template_directory').'/js/galleryview/css/jquery.galleryview-3.0.css');
 		wp_register_script('easing', get_bloginfo('template_directory').'/js/lofslidernews/js/jquery.easing.js', array('jquery'),'1.3' );
 		wp_register_script('lofslidernews', get_bloginfo('template_directory').'/js/lofslidernews/js/script.js', array('jquery', 'easing'),'1.0' );
-		//wp_register_script('galleryview', get_bloginfo('template_directory').'/js/galleryview/js/jquery.galleryview-3.0.min.js', array('jquery', 'easing', 'timers'),'3.0' );
+		
 		wp_enqueue_script('lofslidernews');
 		wp_enqueue_style('slider', get_bloginfo('template_directory').'/css/slider.css');
 	}
 	?>
 	<!--[if IE]> 
 	<style type="text/css" media="screen">
-		input, textarea, .eme-event-item, 
+		input, #container, textarea, .eme-event-item, 
 		#footer, #header, #navbar { behavior: url(<?php bloginfo('template_directory');?>/css/ie-css3.htc);}
 	</style>
 	<![endif]-->
@@ -78,16 +73,14 @@
 							<li><a class="icon rss" href="<?php bloginfo('rss2_url'); ?>" title="RSS"><span>RSS</span></a></li>
             				<li><a class="icon flickr" href="http://www.flickr.com/photos/revistawego/" title="Flickr"><span>Flickr</span></a></li>
             				<li><a class="icon twitter" href="http://twitter.com/revistawego" title="Twitter"><span>Twitter</span></a></li>
-            				<li><a class="icon tuenti" href="http://www.tuenti.com/#m=Page&func=index&page_key=1_1678_60565376" title="Tuenti"><span>Tuenti</span></a></li>
+            				<li><a class="icon tuenti" href="http://www.tuenti.com/#m=Page&amp;func=index&amp;page_key=1_1678_60565376" title="Tuenti"><span>Tuenti</span></a></li>
             				<li><a class="icon facebook" href="http://www.facebook.com/pages/Revista-WEGO/175276217486" title="Facebook"><span>Facebook</span></a></li>
             			</ul>
 					</div>
 				</div>
 				<!-- navigation -->
 				<div id="navbar">
-					<ul>
-						<?php wp_list_categories('show_count=0&title_li=');?>
-       				</ul>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
 				</div><!-- end navigation -->
 			</div><!-- end header -->
 			

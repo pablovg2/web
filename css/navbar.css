@@ -2,7 +2,7 @@
 #navbar { height: 23px; width: 985px; margin: 0; padding: 0; clear: both; background-color: #000;
 -webkit-border-radius: 0px 0px 20px 20px ;
 	-moz-border-radius: 0px 0px 20px 20px;
-	border-radius: 0px 0px 20px 20px; padding-left: 20px;}
+	border-radius: 0px 0px 20px 20px; padding-left: 20px; z-index: 100}
 #navbar.bar {  padding-top: 0px; padding-bottom: 0px; }
 	
 #navbar li {	float: left; list-style: none;
@@ -29,7 +29,7 @@
 			padding: 0;
 			position: absolute;
 			visibility: hidden;
-			border-top: 1px solid #000;}
+			border-top: 1px solid #000; z-index: 100}
 		
 		#navbar li ul li
 		{	float: none;

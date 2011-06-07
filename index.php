@@ -11,7 +11,7 @@
 			"post__not_in" =>get_option("sticky_posts"), 
 			'caller_get_posts' => 1, 
 			'paged' => $pagi,
-			'category__not_in' => array(get_cat_ID('Discos'), get_cat_ID('Libros'), get_cat_ID('Viñeta'))
+			'category__not_in' => array(get_cat_ID('Viñeta'))
 		);
 		query_posts($args); 
 	?>
